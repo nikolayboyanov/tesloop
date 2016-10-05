@@ -1,0 +1,237 @@
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+  color: #197FCC;
+}
+
+.header {
+  span.glyphicon.glyphicon-menu-hamburger {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  p {
+    background: #483B55;
+    line-height: 60px;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    color: #fff;
+    padding: 0 30px;
+    width: 100%;
+    font-size: 22px;
+  }
+}
+
+div.backToTrip {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  min-width: 1000px;
+  span{
+    margin-bottom:-10px;
+  }
+}
+
+a.back {
+  color: #000020;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 30px 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  span.dash {
+    margin-top: 0;
+    margin-left: -15px;
+    letter-spacing: -4px;
+    display: inline-block;
+    position: absolute;
+    top: -3px;
+  }
+}
+
+
+.search-block {
+  background: #f5f5f5;
+  margin-bottom: 15px;
+  padding: 0;
+  overflow: hidden;
+  min-width:1000px;
+  .inner-block {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    .search-text {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 60px;
+      padding: 0;
+      padding-left: 20px;
+      margin: 0 !important;
+      margin-bottom:-5px;
+      border: 0;
+      background: #f5f5f5;
+      width: calc(100% - 180px) !important;
+      display: inline-block;
+      position: relative;
+    }
+    span {
+      &.origin {
+        background: #483B55;
+        line-height: 60px;
+        display: inline-block;
+        float: left;
+        margin: 0;
+        color: #fff;
+        padding: 0 20px;
+        width: 120px;
+      }
+      float: right;
+      line-height: 60px;
+      font-size: 25px;
+      &:last-child {
+        float: right;
+        right: 20px;
+        line-height: 60px;
+        font-size: 25px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.content {
+  border: 1px solid;
+  margin-bottom: 100px;
+}
+.raised-button--rounded  {
+  border-radius: 15px !important; /* assuming one is not already defined */
+  button {
+    border-radius: 15px !important; /* assuming one is not already defined */
+  }
+}
+
+.location {
+  padding-top:20px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid;
+  &:last-child {
+    border-bottom: 0;
+  }
+  .left {
+    width: 65%;
+    padding-left:20px;
+    padding-bottom: 20px;
+    min-width: 300px;
+    float: left;
+
+    p {
+      font-size: 22px;
+      color: #C2C2C2;
+      &.title {
+        color: #000;
+        font-size: 22px;
+        font-weight: 800;
+        margin: 0;
+      }
+      &.full {
+        width: 100%;
+        display: inline-block;
+        color: #fff;
+        background: #C2C2C2;
+        border-radius: 15px;
+        padding: 5px 10px;
+        text-align: center;
+      }
+      &.green {
+        font-size: 22px;
+        font-weight: bold;
+        color: #217F07;
+        margin: 0;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  .text {
+    width: 60%;
+    float: left;
+  }
+  .map {
+    width: 35%;
+    float: right;
+  }
+  .right {
+    width: 25%;
+    padding-right:20px;
+    margin-left: 5%;
+    float: left;
+    p {
+      font-size: 22px;
+      color: #C2C2C2;
+      margin: 0;
+      &.uber {
+        font-size: 22px;
+        color: #000;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.right a {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.location .right {
+  .select {
+    width: 100%;
+    font-size: 22px;
+    margin:12px;
+  }
+  iframe {
+    height: 150px;
+  }
+}
+
+#map div {
+  min-height: 200px;
+}
+
+@media (max-width: 505px) {
+  .location {
+    .left {
+      width: 100%;
+      padding-bottom: 20px;
+      margin: 0;
+      min-width: auto;
+    }
+    .right {
+      width: 100%;
+      margin: 0;
+    }
+    .text {
+      width: 100%;
+      float: left;
+    }
+    .map {
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
+}
